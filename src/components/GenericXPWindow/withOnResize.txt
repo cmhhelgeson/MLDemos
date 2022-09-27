@@ -1,0 +1,65 @@
+/* import React, {useEffect, useRef, useState} from "react"
+import { useDispatch } from "react-redux";
+import { changeWindowSize } from "../../features/windowSize/slice";
+import { AppAction } from "../../actions";
+import { dragRefWith, resizeRefWith} from '../../utils/windowUtils';
+import {ComponentType} from "react"
+import { GenericXPWindow } from "./GenericXPWindow"; */
+
+
+//Maybe reconsider using HOCS if we absolutely need to extend Generic XP Window with different kinds of functionality for different use cases
+
+
+/**NOT REALLY IMPORTANT RIGHT NOW, BUT CONSIDER LOOKING AT IT IF */
+//Possible ways to forward ref of the window to the App component
+//Method 1 Failed
+//2. Forward the ref from app using React.forwardRef
+
+/* type ProviderProps = {
+    text?: string
+    children?: React.ReactNode
+    width?: number
+    height?: number
+}
+
+type InjectedProps = {
+    isResizing: boolean,
+    setIsResizing: React.Dispatch<React.SetStateAction<boolean>>,
+    text?: string
+    children?: React.ReactNode
+    width?: number
+    height?: number
+}
+
+export const withOnResize = (
+    WrappedComponent: ComponentType<InjectedProps> 
+) => {
+  return function WithOnResizeComponent(props: ProviderProps) {
+    const [isResizing, setIsResizing] = useState<boolean>(false);
+    
+    const {text, children, width, height} = props;
+
+    return (<WrappedComponent 
+      isResizing={isResizing}
+      setIsResizing={setIsResizing}
+      text={text} children={children} width={width} height={height}
+      />)
+  }
+    
+}
+
+const WrappedGenericXPWindow = withOnResize(GenericXPWindow)
+
+const WrappedKeyboard = withInstrument(Keyboard)
+
+export const KeyboardWithInstrument = () => {
+  const AudioContext = useAudioContext()!
+  const { instrument } = useInstrument()
+
+  return (
+    <WrappedKeyboard
+      AudioContext={AudioContext}
+      instrument={instrument}
+    />
+  )
+} */

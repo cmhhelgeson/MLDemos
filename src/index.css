@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: gray;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+canvas {
+  cursor: url(./icons/pencil.png) 0 34, auto;
+}
+
+.resize_cursor {
+  cursor: url(./icons/resize-1438243-1216204.png)
+
+}
+
+
+@import "~xp.css/dist/XP.css";
+
+
+
+.edit {
+  position: fixed;
+  bottom: 200px;
+  left: 30%;
+  z-index: 10;
+}
+
+.main_title {
+  color: blue;
+}
+
+
+
+.file {
+  position: fixed;
+  bottom: 40px;
+  right: 20%;
+  z-index: 10;
+}
+
+.modal-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 10;
+}
+
+.projects-container {
+  overflow: auto;
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 10px;
+  width: 600px;
+}
+
+.project-card {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.canvas_wrapper {
+  position: relative;
+  border: 3px solid blue;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
